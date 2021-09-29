@@ -57,7 +57,7 @@ $(function () {
 
 $(function () {
     //skill클래스 첫번째 클래스의 anidation이 시작될때 circleTest 함수 수행
-    $(".title h2:eq(0)").on("animationstart", function () {
+    $(".title a:eq(0)").on("animationstart", function () {
         circleTest();
     });
 });
@@ -107,9 +107,9 @@ toTopEL.addEventListener("click", function () {
 //fade-in 애니메이션
 const fadeEls = document.querySelectorAll(".fade-in");
 fadeEls.forEach(function (fadeEl, index) {
-  gsap.to(fadeEl, 1, {
+  gsap.to(fadeEl, 1.5, {
     opacity: 1,
-    delay: (index + 1) * 0.5,
+    delay: (index + 1) * .5,
   });
 });
 
