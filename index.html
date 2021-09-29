@@ -68,13 +68,23 @@
     <div class="ui"></div>
     <h1 class="fade-in">Web Publisher Portfolio</h1>
     <p class="fade-in">Hello! I am Su Jung</p>
+    <!-- <a href="https://github.com/mey0120" class="btn">
+      github view</a> -->
+    <div class="btn-effect">
+      <a href="https://github.com/mey0120"><span data-hover="Github view">Github View</span></a>
+    </div>
+    
   </section>
 
   <!-- about -->
   <section id="about" class="scroll-spy">
     <div class="inner">
-      <div class="title">
-        <h2 data-splitting class="animate" data-animate="motion">ABOUT</h2>
+      <div class="top">
+        <!-- <h2 data-splitting class="animate" data-animate="motion">ABOUT</h2> -->
+        <div class="title">
+          <a class="text" href="#about">
+            <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></a>
+        </div>
         <p data-splitting class="animate" data-animate="motion">It is coding that I truly enjoy. That is why I would
           like to be a publisher. <br>
           I have a passion for what I do and will do. I am clocked in and ready for work.</p>
@@ -84,10 +94,16 @@
           <div class="circle">
             <strong></strong>
           </div>
-          <span>HTML/CSS</span>
+          <span>HTML/CSS/SCSS</span>
         </div>
         <div class="item">
-          <div class="circle circle1">
+          <div class="circle circle1 ">
+            <strong></strong>
+          </div>
+          <span>Photoshop</span>
+        </div>
+        <div class="item">
+          <div class="circle circle2">
             <strong></strong>
           </div>
           <span>Javascript</span>
@@ -96,13 +112,7 @@
           <div class="circle circle2 ">
             <strong></strong>
           </div>
-          <span>Photoshop</span>
-        </div>
-        <div class="item">
-          <div class="circle circle2 ">
-            <strong></strong>
-          </div>
-          <span>Illustrator</span>
+          <span>Vue.js</span>
         </div>
       </div>
     </div>
@@ -111,8 +121,37 @@
   <!-- work -->
   <section id="work" class="scroll-spy">
     <div class="inner">
-      <h2 data-splitting class="item animate" data-animate="motion">WORK</h2>
+      <!-- <h2 data-splitting class="item animate" data-animate="motion">WORK</h2>
+       -->
+      <div class="title">
+        <a class="text" href="#work">
+          <span>W</span><span>O</span><span>R</span><span>K</span></a>
+      </div>
       <ul data-splitting class="work_box item animate" data-animate="motion">
+        <li>
+          <a href="#">
+            <img src="./images/work_01.jpg" alt="Alldipe Web Site">
+          </a>
+          <div class="hover-text">
+            <h3>Alldipe Web Site</h3>
+          </div>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/work_02.jpg" alt="Dopda Web Site">
+          </a>
+          <div class="hover-text">
+            <h3>Todo app</h3>
+          </div>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/work_03.jpg" alt="Musign Web Site">
+          </a>
+          <div class="hover-text">
+            <h3>Musign Web Site</h3>
+          </div>
+        </li>
         <li>
           <a href="#">
             <img src="./images/work_01.jpg" alt="Starbucks Web Site">
@@ -167,6 +206,48 @@
           close
         </span>
         <ul>
+          <li class="description">
+            <p><img src="./images/work_d_01.jpg" alt="Starbucks Web Site"></p>
+            <ul>
+              <li>올디프 웹사이트 입니다.</li>
+              <li>Vue,js 를 이용하여 코딩하였습니다. 브이엠네트웍스라는 회사에서 2개월간 근무하며 고도몰로 쇼핑몰을 유지보수 하였으며 리뉴얼 프로젝트가 취소되어 퇴사하게 되었습니다. Vue.js
+                를 공부하면서 메인 페이지를 만들어 보았습니다. </li>
+              <li>
+                <p><a href="https://agitated-euclid-cce41c.netlify.app" target="_blank" title="새창으로 이동합니다"
+                    class="btn">Site
+                    View</a></p>
+              </li>
+            </ul>
+          </li>
+          <li class="description">
+            <p><img src="./images/work_d_02.jpg" alt="Dopda Web Site"></p>
+            <ul>
+              <li>돕다 웹사이트 입니다.</li>
+              <li> 미디어쿼리를 구현하여 어떤 사이즈의 기기에서도 불편함이 없도록 반응형으로
+                제작하였습니다. 스크롤 애니메이션과 Fullpage Slides로 시각적인 효과를
+                주었습니다. </li>
+              <li>
+              </li>
+              <li><a href="./Dopda/index.html" target="_blank" title="새창으로 이동합니다" class="btn">Site
+                  View</a></li>
+            </ul>
+          </li>
+          <li class="description">
+            <p><img src="./images/work_d_03.jpg" alt="Musign Web Site"></p>
+            <ul>
+              <li>뮤자인 웹사이트 입니다.</li>
+              <li> 미디어쿼리를 구현하여 어떤 사이즈의
+                기기에서도 불편함이 없도록 반응형으로
+                제작하였습니다. 움직이는 circle svg를 사용하였고 scroll
+                resize를 이용하여 스크롤 위치에 따라
+                배경 색상 변경이 실행되도록 구현
+                했습니다. </li>
+              <li>
+              </li>
+              <li><a href="./Musign/index.html" target="_blank" title="새창으로 이동합니다" class="btn">Site
+                  View</a></li>
+            </ul>
+          </li>
           <li class="description">
             <p><img src="./images/work_d_01.jpg" alt="Starbucks Web Site"></p>
             <ul>
@@ -264,14 +345,21 @@
   <!-- contact -->
   <section id="contact" class="scroll-spy">
     <div class="inner">
-      <h2 data-splitting class="item animate" data-animate="motion">CONTACT</h2>
+      <!-- <h2 data-splitting class="item animate" data-animate="motion">CONTACT</h2> -->
+      <div class="title">
+        <a class="text" href="#contact">
+          <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span></a>
+      </div>
       <form data-splitting class="gform animate" data-animate="motion" method="post"
         action="https://script.google.com/macros/s/AKfycbzrnQk6Y5twu0Qb5vSwUb0ynP4f_MRnm9ORKeTGZG47QG4ab_PDD4HKeAmbpW9hRSzf/exec">
         <input id="company" name="company" value="" placeholder="your company" class="unit active" />
         <input id="name" name="name" placeholder="your name" class="unit active" />
         <input id="email" name="email" type="email" value="" required="" placeholder="your email" class="unit active" />
         <input id="message" name="message" placeholder="message" class="unit active" />
-        <button class="btn button-success pure-button button-xlarge unit active">Send Message</button>
+        <!-- <button class="btn button-success pure-button button-xlarge unit active">Send Message</button> -->
+        <button class="btn-effect button-success pure-button button-xlarge unit active">
+          <a href=""><span data-hover="Send Message">Send Message</span></a>
+        </button>
         <!--thank you-->
         <div style="display: none" class="thankyou_message">
           <h2>

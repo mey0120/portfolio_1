@@ -26,6 +26,18 @@ function circleTest() {
                 .html(Math.round(90 * progress) + "<i>%</i>");
         });
         $('.circle1').circleProgress({
+            value: 80 / 100,
+            startAngle: 300,
+            fill: {
+                color: '#38a5db'
+            }
+        })
+        .on("circle-animation-progress", function (event, progress) {
+            $(this)
+                .find("strong")
+                .html(Math.round(80 * progress) + "<i>%</i>");
+        });
+        $('.circle2').circleProgress({
             value: 60 / 100,
             startAngle: 300,
             fill: {
@@ -36,18 +48,6 @@ function circleTest() {
             $(this)
                 .find("strong")
                 .html(Math.round(60 * progress) + "<i>%</i>");
-        });
-        $('.circle2').circleProgress({
-            value: 70 / 100,
-            startAngle: 300,
-            fill: {
-                color: '#38a5db'
-            }
-        })
-        .on("circle-animation-progress", function (event, progress) {
-            $(this)
-                .find("strong")
-                .html(Math.round(70 * progress) + "<i>%</i>");
         });
 }
 $(function () {
